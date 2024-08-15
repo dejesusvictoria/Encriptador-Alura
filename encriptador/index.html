@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-mex">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="encriptador.js" defer></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="assets/Logo.png" alt="logoAlura">
+    </header>
+    <main class="main">
+        <div class="textoIn">
+            <textarea id="texto"  placeholder="Ingrese el texto aqui" class="textoIngresado"></textarea> 
+            <div class="condiciones">
+                <h6><img class="exclamacion" src="assets/bi_exclamation-circle-fill.png"> Solo letras minúsculas y sin acentos</h6>  
+            </div>
+            <div class="botones">     
+                <button class="btnEn" onclick="encriptar();">Encriptar</button>
+                <button class="btnDes" onclick="desencriptar();">Desencriptar</button>
+            </div>
+        </div>
+      
+        <div class="textoDes">
+            <textarea id="textoDesencriptado" class="textoDesencriptado" ></textarea>
+            <div id="textoDesMsj">
+                <img src="assets/muneco.png" class="muneco">
+                <p class="mensaje1">Ningún mensaje fue encontrado</p>
+                <p class="msj2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="ctrlc" id="btncopiar" onclick="copiarEncriptado(document.getElementById('textoDesencriptado').value);">Copiar</button>
+            
+        </div>  
+        
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Victoria de Jesús</p>
+    </footer>
+</body>
+</html>
